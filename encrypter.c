@@ -1,5 +1,7 @@
+//c program to use the concepts of pointers,passing arguments to functions.
 #include <stdio.h>
 #include <stdlib.h>
+//using pass by refrence and pass by value
 void encrypt(char[],const int*,int);
 void decrypt(char[],const int*,int);
 void newKey(int *);
@@ -8,7 +10,7 @@ int main(int argc, char const *argv[]) {
 char text[20]={'\0'};
 int choice=1;
 int key;
-key=(rand()%4)+1;
+key=(rand()%4)+1;// creates a random number from 1 to 4
 int i=0;
 
 while (choice!=0) {
